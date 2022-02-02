@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me | Suchitra Pal</title>
+    <style>
+    
+        *{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+        }
+        nav{
+            padding-top: 1px;
+            padding-bottom: 120px;
+            background-color: rgb(37, 37, 37);
+        }
+        nav a{
+            font-family:'Montserrat', sans-serif;
+            font-size: 21px;
+            color: white;
+        }
+        nav a:hover{
+            text-decoration: none;
+        }
+        #status{
+            width:90%;
+            max-width:500px ;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        #status.success{
+            background-attachment: orange;
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }
+        section{
+            height:100vh;
+            width:100%;
+            background-color: rgb(40, 72, 109);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container{
+            width:90%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow :0px 0px 5px rgb(22, 77, 87);
+            background-color: rgb(198, 198, 201);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .form{
+            width:100%;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .form-group input, .form-group textarea{
+            width:100%;
+            padding:15px;
+            font-size: 18px;
+            border: 1px solid rgb(2, 61, 5);
+            margin-top: 5px;
+        }
+        textarea{
+            resize:vertical
+        }
+        button[type="submit"]{
+            width:100%;
+            border: none;
+            outline: none;
+            padding: 18px;
+            font-size: 24px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#0099ff;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover{
+            padding: 16px;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#ffffff;
+            color: #0099ff;
+            border: 3px solid #0099ff;;
+            transition: .3s ease background-color;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        a:hover{
+   color: #0099ff;
+   text-decoration: underline;
+}
+
+ a{
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    background-color:none;
+    font-size: 18px;
+    padding-top: 4%;
+    padding-right: 30px;
+    text-decoration: none;
+}
+ #hire{
+    color: #0099ff;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+     font-weight: 800;
+     pointer-events: none;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a id="hire" href="hire.html">HIRE ME</a>
+        <a href="portfolio.html">Home</a>
+        <a href="mailto: suchitrapal202@gmail.com?subject= Feedback&body=Hey Suchitra Pal, I would like to inform you that ">Contact</a>
+        <a href="#">Project</a>
+        
+    </nav>
+   
+    <section>
+       
+        <div class="container">
+            <form action="https://formspree.io/mbjzbwaj" method="post">
+              <div class="form-group">
+                  <label for="email" >Email</label>
+                  <input type="email" id="email" placeholder="eg:abx@gmail.com" name="email">
+              </div>
+              <div class="form-group">
+                  <label for="Message">Message</label>
+              <textarea name="message" is="message" placeholder="Enter Your Message" cols="30" rows="10"></textarea>
+              </div>
+
+              <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div id="status" ></div>
+    </section>
+</body>
+</html>
